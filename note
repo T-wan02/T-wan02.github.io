@@ -1,0 +1,35 @@
+# company
+
+id name description slug address website email
+
+# admin
+
+id name email password role company_id
+
+# employees
+
+id name phone address email password company_id role salary
+
+# tasks
+
+id name slug description employee_id company_id is_done(on_progress, unopen, finished) deadline
+
+<!-- # quit_form -->
+
+<!-- id reason due_date empolyee_id company_id  -->
+
+# quitting_employee
+
+id employee_id company_id reason submitted_time desicion(on_progress, fired, reject) pending_time pending_reason
+
+# hiring_jobs
+
+id name slug description role requirement company_id interview_date deadline
+
+# enrollment
+
+id name email phone address resume(png) role estimated_salary status(pending, interview, reject) company_id hiring_job_id
+
+# interview
+
+id name email resume(png) role result(success, reject) company_id enrollment_id
